@@ -36,5 +36,5 @@ Dans le dossier [2.Procedural-splitted](./2.Procedural-splitted), vous trouverez
 
 Le but de l'exercice est:
 
-> Transformer les variables faisant reference au produit, en une **Classe Product*, et remplacer toutes les occurences par des instances de votre classe produit 
+> Transformer les variables faisant reference au produit, en une **Classe Product**, et remplacer toutes les occurences par des instances de votre classe produit 
 
