@@ -4,7 +4,7 @@ function my_connect()
 {
     global $link;
 
-    $link = mysqli_connect('127.0.0.1:3307', 'user', 'pwd', 'db');
+    $link = mysqli_connect('127.0.0.1', 'user', 'pwd', 'db');
     if (!$link) {
         die('Connection Error: ('.mysqli_connect_errno().') '.mysqli_connect_error());
     }

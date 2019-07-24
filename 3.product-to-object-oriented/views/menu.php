@@ -31,6 +31,7 @@ function menu() {
         case 1:
             {
                 listProduct();
+
                 break;
             }
         case 2:

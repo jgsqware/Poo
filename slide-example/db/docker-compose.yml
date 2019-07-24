@@ -1,0 +1,27 @@
+version: "3.2"
+services:
+  apache:
+    build: "."
+    depends_on:
+      - mysql
+    networks:
+      - frontend
+      - backend
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html/
+  mysql:
+    image: mysql:5.6.40
+    networks:
+      - backend
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=vehicles
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=pwd
+networks:
+  frontend:
+  backend:
